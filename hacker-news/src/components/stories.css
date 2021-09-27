@@ -1,12 +1,8 @@
 .grid-container {
-  border-radius: 25px;
-  border:1px outset rgb(26, 21, 23);
-  width: 380px;
-  padding: 20px;
-  text-align: center;
-  background-color: rgb(217, 241, 230);
-  height: 200px;
-  margin: 20px;
-  margin-left: 35%;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  margin:30px 14rem 30px 14rem;
+  border-radius: 4rem;
+  background-color: rgb(213, 235, 227);
 }
