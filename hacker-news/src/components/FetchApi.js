@@ -20,6 +20,7 @@ const FetchApi = () => {
                     ).then((res) => res.json());
                 })
             );
+            console.log(stories)
 
             stories = await Promise.all(
                 stories.map((story) => {
@@ -41,7 +42,7 @@ const FetchApi = () => {
                 .map(({ id, by, title, time, userKarma, score, url }) => (
                     <div key={id} className="grid-container">
                         <p>Title : {title}</p>
-                        <p>Url : {url}</p>
+                        <a href={url}>Url</a>
                         <p>score : {score}</p>
                         <p>Time : {new Date(time).toLocaleTimeString("en-US")}</p>
                         <p>Author : {by}</p>
